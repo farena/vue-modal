@@ -61,11 +61,11 @@
         },
         mounted() {
             setTimeout(()=>this.open=true,100);
-            document.body.classList.add('no-scroll');
+            document.body.classList.add('no-scrollable');
         },
         methods: {
             close(){
-                document.body.classList.remove('no-scroll');
+                document.body.classList.remove('no-scrollable');
 
                 this.$emit('close');
             }
